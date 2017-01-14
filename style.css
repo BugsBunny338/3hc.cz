@@ -6,6 +6,16 @@ body {
   text-align: center;
 }
 
+::selection {
+  color: #F04E2F;
+  background: #333333;
+}
+
+::-moz-selection {
+  color: #F04E2F;
+  background: #333333;
+}
+
 a {
   color: white;
 }
