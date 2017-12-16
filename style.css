@@ -1,37 +1,37 @@
 
 body {
-  background-color: #F04E2F;
-  color: white;
-  font-family: Soleil;
-  text-align: center;
+    background-color: black;
+    color: white;
+    font-family: 'Lato', sans-serif;
+    font-weight: 400;
+    text-align: center;
 }
 
 ::selection {
-  color: #F04E2F;
-  background: #333333;
+    color: black;
+    background: rgba(255, 255, 255, 0.996);
 }
 
 ::-moz-selection {
-  color: #F04E2F;
-  background: #333333;
+    color: black;
+    background: rgba(255, 255, 255, 0.996)
 }
 
 a {
-  color: white;
+    color: white;
 }
 
 a:hover {
-  text-decoration: none;
+    text-decoration: none;
 }
 
 h1 {
-  font-weight: bold;
-  text-transform: lowercase;
-  font-size: 5em;
-  margin-top: 20vh;
+    font-weight: 100;
+    font-size: 5em;
+    margin-top: 20vh;
 }
 
 address {
-  font-style: normal;
-  line-height: 1.45;
+    font-style: normal;
+    line-height: 1.45;
 }
