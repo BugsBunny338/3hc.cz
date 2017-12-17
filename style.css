@@ -37,6 +37,10 @@ a:hover {
     text-decoration: none;
 }
 
+address, a {
+    font-weight: 100;
+}
+
 header {
     margin-top: 20vh;
 }
@@ -59,6 +63,10 @@ svg {
     transition-timing-function: ease-in-out;
 }
 
+#earLeft, #earRight {
+    stroke-width: 0.65;
+}
+
 h1 {
     font-weight: 100;
     font-size: 5em;
@@ -68,4 +76,22 @@ h1 {
 address {
     font-style: normal;
     line-height: 1.45;
+}
+
+@media only screen and (max-device-width: 768px) {
+    svg {
+        margin-bottom: -50px;
+    }
+    h1 {
+        font-size: 3em;
+    }
+    #earLeft, #earRight {
+        stroke-width: 0.3;
+    }
+    address, a {
+        font-weight: 300;
+    }
+    a {
+        text-decoration: none;
+    }
 }
