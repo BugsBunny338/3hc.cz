@@ -1,13 +1,18 @@
 
 @keyframes cutLeftEar {
+    /* https://css-tricks.com/css-keyframe-animation-delay-iterations/ */
     0% { transform: translate(49.83px, 51.19px) rotate(-45deg); }
-    50% { transform: translate(49.83px, 51.19px) rotate(-25deg); }
+    2% { transform: translate(49.83px, 51.19px) rotate(-45deg); }
+    5% { transform: translate(49.83px, 51.19px) rotate(-25deg); }
+    10% { transform: translate(49.83px, 51.19px) rotate(-45deg); }
     100% { transform: translate(49.83px, 51.19px) rotate(-45deg); }
 }
 
 @keyframes cutRightEar {
+    /* https://css-tricks.com/css-keyframe-animation-delay-iterations/ */
     0% { transform: translate(49.83px, 51.19px) rotate(-45deg); }
-    50% { transform: translate(49.83px, 51.19px) rotate(-55deg); }
+    5% { transform: translate(49.83px, 51.19px) rotate(-55deg); }
+    10% { transform: translate(49.83px, 51.19px) rotate(-45deg); }
     100% { transform: translate(49.83px, 51.19px) rotate(-45deg); }
 }
 
@@ -52,15 +57,16 @@ svg {
 
 #earLeft {
     animation-name: cutLeftEar;
-    animation-duration: 800ms;
-    animation-delay: 200ms;
+    animation-duration: 10s;
     transition-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
 }
 
 #earRight {
     animation-name: cutRightEar;
-    animation-duration: 1s;
+    animation-duration: 10s;
     transition-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
 }
 
 #earLeft, #earRight {
