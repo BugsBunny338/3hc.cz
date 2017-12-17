@@ -1,4 +1,16 @@
 
+@keyframes cutLeftEar {
+    0% { transform: translate(49.83px, 51.19px) rotate(-45deg); }
+    50% { transform: translate(49.83px, 51.19px) rotate(-25deg); }
+    100% { transform: translate(49.83px, 51.19px) rotate(-45deg); }
+}
+
+@keyframes cutRightEar {
+    0% { transform: translate(49.83px, 51.19px) rotate(-45deg); }
+    50% { transform: translate(49.83px, 51.19px) rotate(-55deg); }
+    100% { transform: translate(49.83px, 51.19px) rotate(-45deg); }
+}
+
 body {
     background-color: black;
     color: white;
@@ -14,7 +26,7 @@ body {
 
 ::-moz-selection {
     color: black;
-    background: rgba(255, 255, 255, 0.996)
+    background: rgba(255, 255, 255, 0.996);
 }
 
 a {
@@ -25,10 +37,32 @@ a:hover {
     text-decoration: none;
 }
 
+header {
+    margin-top: 20vh;
+}
+
+svg {
+    margin-bottom: -40px;
+    width: 200px;
+}
+
+#earLeft {
+    animation-name: cutLeftEar;
+    animation-duration: 800ms;
+    animation-delay: 200ms;
+    transition-timing-function: ease-in-out;
+}
+
+#earRight {
+    animation-name: cutRightEar;
+    animation-duration: 1s;
+    transition-timing-function: ease-in-out;
+}
+
 h1 {
     font-weight: 100;
     font-size: 5em;
-    margin-top: 20vh;
+    margin-top: 0;
 }
 
 address {
