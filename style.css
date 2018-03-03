@@ -75,13 +75,24 @@ svg {
 
 h1 {
     font-weight: 100;
-    font-size: 5em;
+}
+
+h1.threehc {
+    font-size: 6em;
     margin-top: 0;
+    margin-bottom: 0;
+}
+
+h1.advisorygroup {
+    font-size: 2em;
+    margin-top: -0.5em;
+    margin-bottom: 2em;
 }
 
 address {
     font-style: normal;
     line-height: 1.45;
+    margin-bottom: 20vh;
 }
 
 @media only screen and (max-device-width: 768px) {
