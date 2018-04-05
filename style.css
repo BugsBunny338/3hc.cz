@@ -16,10 +16,15 @@
     100% { transform: translate(49.83px, 51.19px) rotate(-45deg); }
 }
 
+@font-face {
+    font-family: HelveticaNeueCyrUltraLight;
+    src: url("./HelveticaNeueCyr-UltraLight.otf") format("opentype");
+}
+
 body {
     background-color: black;
     color: white;
-    font-family: 'Lato', Helvetica, sans-serif;
+    font-family: Trebuchet, Helvetica, sans-serif;
     font-weight: 100;
     text-align: center;
 }
@@ -46,53 +51,70 @@ address, a {
     font-weight: 100;
 }
 
-header {
+.row {
     margin-top: 20vh;
 }
 
-svg {
+.logo {
+    font-family: 'Lato', Helvetica, sans-serif;
+}
+
+.logo svg {
     margin-bottom: -40px;
     width: 200px;
 }
 
-#earLeft {
+.logo #earLeft {
     animation-name: cutLeftEar;
     animation-duration: 10s;
     transition-timing-function: ease-in-out;
     animation-iteration-count: infinite;
 }
 
-#earRight {
+.logo #earRight {
     animation-name: cutRightEar;
     animation-duration: 10s;
     transition-timing-function: ease-in-out;
     animation-iteration-count: infinite;
 }
 
-#earLeft, #earRight {
+.logo #earLeft, .logo #earRight {
     stroke-width: 0.65;
 }
 
-h1 {
+.logo h1 {
     font-weight: 100;
 }
 
-h1.threehc {
+.logo h1.threehc {
     font-size: 6em;
     margin-top: 0;
     margin-bottom: 0;
 }
 
-h1.advisorygroup {
+.logo h1.advisorygroup {
     font-size: 2em;
     margin-top: -0.5em;
     margin-bottom: 2em;
+}
+
+.text p {
+    margin-bottom: 0;
+}
+
+.text ul {
+    padding-left: 20px;
+}
+
+.text p, .text ul li {
+    text-align: left;
 }
 
 address {
     font-style: normal;
     line-height: 1.45;
     margin-bottom: 20vh;
+    font-family: 'Lato', Helvetica, sans-serif;
 }
 
 @media only screen and (max-device-width: 768px) {

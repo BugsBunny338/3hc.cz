@@ -6,6 +6,7 @@
         <meta name="description" content="Konzultace a služby v oblasti IT.">
         <meta name="author" content="Jiří Zajíc">
         <link href="https://fonts.googleapis.com/css?family=Lato:100,300,400&amp;subset=latin-ext" rel="stylesheet">
+        <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
         <link rel="stylesheet" href="style.css">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <!--[if lt IE 9]>
@@ -44,14 +45,66 @@
         </script>
     </head>
     <body>
-        <header>
-            <svg viewbox="0 0 100 100" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" id="canvas1">
-                <ellipse id="earLeft" stroke="rgb(255, 255, 255)" fill="none" cx="0.04" cy="-21" rx="8.39" ry="25.1" transform="translate(49.83, 51.19) rotate(-45)" />
-                <ellipse id="earRight" stroke="rgb(255, 255, 255)" fill="none" cx="20.97" cy="-0.06" rx="25.1" ry="8.39" transform="translate(49.83, 51.19) rotate(-45)" />
-            </svg>
-            <h1 class="threehc">3HC</h1>
-            <h1 class="advisorygroup">advisory group</h1>
-        </header>
+        <div class="container">
+            <div class="row">
+                <header class="logo col-sm-4 order-xl-3">
+                    <svg viewbox="0 0 100 100" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" id="canvas1">
+                        <ellipse id="earLeft" stroke="rgb(255, 255, 255)" fill="none" cx="0.04" cy="-21" rx="8.39" ry="25.1" transform="translate(49.83, 51.19) rotate(-45)" />
+                        <ellipse id="earRight" stroke="rgb(255, 255, 255)" fill="none" cx="20.97" cy="-0.06" rx="25.1" ry="8.39" transform="translate(49.83, 51.19) rotate(-45)" />
+                    </svg>
+                    <h1 class="threehc">3HC</h1>
+                    <h1 class="advisorygroup">advisory group</h1>
+                </header>
+                <div class="text col-xl-2 col-lg-12 order-xl-1">
+                    <p>Externí správa HFM</p>
+                    <ul>
+                        <li>úpravy metadat</li>
+                        <li>kompletní revize všech procesů koncových uživatelů a následná konzultace a návrh na jejich vylepšení/zjednodušení</li>
+                        <li>změna systémových pravidel</li>
+                        <li>tvorba SmartView reportů</li>
+                        <li>pravidelná záloha všech dat</li>
+                    </ul>
+                </div>
+                <div class="text col-xl-2 col-lg-12 order-xl-2">
+                    <p>Externí správa Essbase</p>
+                    <ul>
+                        <li>vytvoření a správa ASO a BSO cubes</li>
+                        <li>úprava alokačních pravidel</li>
+                        <li>pravidelná záloha všech dat</li>
+                    </ul>
+                    <p>Externí správa FDMEE</p>
+                    <ul>
+                        <li>správa map, import formátů, import scriptů</li>
+                        <li>pravidelná záloha všech dat</li>
+                    </ul>
+                </div>
+                <div class="text col-xl-2 col-lg-12 order-xl-4">
+                    <p>Vývoj na zakázku</p>
+                    <ul>
+                        <li>webové stránky</li>
+                        <li>mobilní aplikace</li>
+                        <li>informační systémy</li>
+                    </ul>
+                    <p>IT poradenství a konzultace v oblasti</p>
+                    <ul>
+                        <li>právní (GDPR)</li>
+                        <li>produktů Apple</li>
+                        <li>ERP systémů pro HFM a SAP</li>
+                        <li>cloudových služeb</li>
+                        <li>sociálních sítí</li>
+                    </ul>
+                </div>
+                <div class="text col-xl-2 col-lg-12 order-xl-5">
+                    <p>Externí správa IT</p>
+                    <ul>
+                        <li>červená</li>
+                        <li>modrá</li>
+                        <li>bílá</li>
+                        <li>zelená</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
         <address>
             3HC Advisory Group s.r.o.<br/>
             <a href="mailto:info@3hc.cz">info@3hc.cz</a><br />
