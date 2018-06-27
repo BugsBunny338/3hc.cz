@@ -19,8 +19,8 @@
 body {
     background-color: black;
     color: white;
-    font-family: 'Lato', Helvetica, sans-serif;
-    font-weight: 100;
+    font-family: 'Work Sans', sans-serif;
+    font-weight: 300;
     text-align: center;
 }
 
@@ -40,10 +40,6 @@ a {
 
 a:hover {
     text-decoration: none;
-}
-
-address, a {
-    font-weight: 100;
 }
 
 header {
@@ -73,18 +69,15 @@ svg {
     stroke-width: 0.65;
 }
 
-h1 {
-    font-weight: 100;
-}
-
 h1.threehc {
+    font-weight: 100;
     font-size: 6em;
     margin-top: 0;
     margin-bottom: 0;
 }
 
 h1.advisorygroup {
-    font-size: 2em;
+    font-size: 1.6em;
     margin-top: -0.5em;
     margin-bottom: 2em;
 }
@@ -102,39 +95,15 @@ address {
     svg {
         margin-bottom: -50px;
     }
-    h1 {
-        font-size: 3em;
-    }
-    #earLeft, #earRight {
-        stroke-width: 0.3;
-    }
-    address, a {
-        font-weight: 300;
-    }
     address {
         margin-bottom: 5vh;
-    }
-    a {
-        text-decoration: none;
     }
 }
 
 @media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
     /* IE10+ CSS styles go here */
-    a {
-        font-weight: 300;
-    }
-    address {
-        font-weight: 300;
-    }
 }
 
 @supports (-ms-accelerator:true) {
     /* IE Edge 12+ CSS styles go here */
-    a {
-        font-weight: 300;
-    }
-    address {
-        font-weight: 300;
-    }
 }
