@@ -88,6 +88,25 @@ address {
     margin-bottom: 20vh;
 }
 
+section {
+    overflow: scroll;
+    white-space: nowrap;
+}
+
+section h2 {
+    display: none;
+}
+
+section div {
+    display: inline-block;
+    margin: 0 15px;
+    height: 50px;
+    width: 100px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
 @media only screen and (max-device-width: 768px) {
     header {
         margin-top: 5vh;
@@ -97,6 +116,9 @@ address {
     }
     address {
         margin-bottom: 5vh;
+    }
+    section {
+        white-space: normal;
     }
 }
 
