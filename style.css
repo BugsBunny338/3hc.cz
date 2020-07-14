@@ -16,12 +16,27 @@
     100% { transform: translate(49.83px, 51.19px) rotate(-45deg); }
 }
 
+html, body {
+    height: 100%;
+}
+
 body {
     background-color: black;
     color: white;
     font-family: 'Work Sans', sans-serif;
     font-weight: 300;
     text-align: center;
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    min-height: 100%;
+}
+
+main {
+    flex-grow: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 ::selection {
@@ -43,7 +58,7 @@ a:hover {
 }
 
 header {
-    margin-top: 20vh;
+    /* margin-top: 20vh; */
 }
 
 svg {
@@ -86,10 +101,10 @@ h1.advisorygroup {
 address {
     font-style: normal;
     line-height: 1.45;
-    margin-bottom: 20vh;
 }
 
 section {
+    padding: 50px 0;
     overflow: scroll;
     white-space: nowrap;
 
@@ -113,27 +128,4 @@ section div {
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center center;
-}
-
-@media only screen and (max-device-width: 768px) {
-    header {
-        margin-top: 5vh;
-    }
-    svg {
-        margin-bottom: -50px;
-    }
-    address {
-        margin-bottom: 5vh;
-    }
-    section {
-        white-space: normal;
-    }
-}
-
-@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
-    /* IE10+ CSS styles go here */
-}
-
-@supports (-ms-accelerator:true) {
-    /* IE Edge 12+ CSS styles go here */
 }
